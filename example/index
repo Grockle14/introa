@@ -1,0 +1,9 @@
+<script>
+var firstLine=prompt("Write a five syllable phrase");
+var secondLine=prompt("Now I command you to write a seven syllable phrase");
+
+
+
+            
+
+ 
