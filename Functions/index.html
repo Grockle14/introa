@@ -1,0 +1,22 @@
+<script>
+    
+   //x=(-b+_[b^2-4ac])/2a
+    //x=(-b-_[b^2-4ac])/2a
+    
+   var a=prompt("a= ");
+        var b=prompt("b= ");
+        var c=prompt("c=");
+    
+    
+    
+    function quadForm(a, b, c) {
+        
+        var num=(-b);
+        var squareRoot=Math.sqrt((b*b)-(4*a*c));
+        var dem=(-2*a)
+        console.log("x= " + ((num+squareRoot)/dem) + " or x= " + ((num-squareRoot)/dem));
+    }
+    
+    quadForm(a, b, c)
+    
+</script>
