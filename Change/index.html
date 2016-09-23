@@ -1,0 +1,43 @@
+<script>
+    
+    var cost=prompt("What is your total cost");
+    var amountPaid=prompt("How much did you pay");
+
+  
+    
+    
+    
+    function change(cost, amountPaid){
+    
+    if (amountPaid > cost) {
+        
+        console.log("Here's your change:")
+         var change=(amountPaid-cost);
+      
+      var dollars= Math.round(change-0.5);
+        console.log("dollars: " +dollars);
+        
+        var quarters= Math.floor((change-dollars)*4)/4;
+        console.log("quarters: "+quarters*4);
+        
+        var dimes= Math.floor((change-dollars-quarters)*10)/10;
+        console.log("dimes: "+ dimes*10);
+        
+        var nickels= Math.floor((change-dollars-quarters-dimes)*5)/5;
+        console.log("nickels: "+nickels*5);
+        
+         var pennies= Math.ceil(change-dollars-quarters-dimes-nickels);
+        console.log("pennies: "+pennies);
+      
+        
+    }
+    else {if (amountPaid<cost) {alert("You didn't pay enough!")}
+          else {alert("Why do you need this program? You paid the exact amount!")}
+         }
+        
+    }
+    
+    change(cost, amountPaid)
+    
+    </script>
+
