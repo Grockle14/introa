@@ -1,0 +1,120 @@
+<html>
+    <head></head>
+    
+    <body>
+        
+        <canvas id="myCanvas" width="1000" height="1000">  </canvas> 
+ <script>
+         var c= document.getElementById("myCanvas");
+         var ctx= c.getContext("2d");
+    
+     
+      
+     
+     var grd=ctx.createLinearGradient(0,0,0,800);
+     grd.addColorStop(0,"rgb(202, 155, 204)");
+     grd.addColorStop(1,"rgb(164, 194, 244)");
+     ctx.fillStyle=grd;
+     ctx.fillRect(0,0,1000,1000);
+            
+     
+     ctx.beginPath();
+     ctx.lineWidth="6";
+      ctx.fillStyle="#f9e3fc";
+     ctx.fillRect(20,90,100,900);
+     ctx.stroke();
+     
+     ctx.beginPath();
+  
+     ctx.moveTo(750,500);
+    ctx.lineTo(700,40);
+    ctx.lineTo(720,150);
+    ctx.lineTo(680,800);
+    ctx.lineTo(520,950);
+    ctx.fillStyle="rgba(110,110,600,0.2)"
+     ctx.fill();
+     
+     ctx.beginPath();
+     
+     ctx.moveTo(500,40);
+     ctx.lineTo(550,20);
+     ctx.lineTo(100,30);
+     ctx.lineTo(500,40);
+     ctx.lineTo(450,120);
+     ctx.lineTo(720,150);
+     ctx.lineTo (500,40);
+     ctx.moveTo(450,120);
+     ctx.lineTo(220,240);
+     ctx.lineTo(190,320);
+     ctx.lineTo(450,120);
+    
+     ctx.fillStyle="rgba(110,110,600,0.2)"
+     ctx.fill();
+     
+     
+   ctx.beginPath();
+     ctx.moveTo(500,600);
+     ctx.lineTo(500,599.99999999);
+     ctx.stroke();
+     
+     
+          ctx.beginPath();
+     ctx.lineWidth="6";
+      ctx.fillStyle="#f9e3fc";
+     ctx.fillRect(880,200,100,900);
+     ctx.stroke();
+     
+     ctx.beginPath();
+     ctx.moveTo(880,200);
+     ctx.lineTo(800,100);
+     ctx.lineTo(900,100);
+     ctx.lineTo(980,200);
+     
+     ctx.fillStyle="#f9e3fc"
+     ctx.fill();
+     
+      
+    
+     ctx.beginPath();
+     ctx.lineWidth="8";
+     ctx.fillStyle="rgba(43, 122, 219,0.2)";
+     ctx.fillRect(100,840,50,700);
+     ctx.stroke();
+     
+     
+     ctx.beginPath();
+     ctx.lineWidth="8";
+     ctx.fillStyle="rgba(430, 122, 219,0.2)";
+     ctx.fillRect(730,700,500,700);
+     ctx.stroke();
+     
+     
+     
+   ctx.lineWidth="180";
+     ctx.strokeStyle="rgba(255,255,255,0.8)"
+     ctx.arc(500,400,400,2, Math.PI);
+     ctx.stroke();
+     
+    
+     
+     
+     ctx.lineWidth="500";
+     ctx.strokeStyle="rgba(209, 227, 249,0.2)"
+     ctx.arc(500,400,400,4,1.5* Math.PI);
+     ctx.stroke();
+     
+      ctx.lineWidth="500";
+     ctx.strokeStyle="rgba(209, 227, 249,0.2)"
+     ctx.arc(500,400,400, -Math.PI/6, 4);
+     ctx.stroke();
+     
+     
+            
+    
+ </script>
+            
+ </body>
+  
+        
+  </html>
+        
