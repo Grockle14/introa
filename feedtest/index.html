@@ -1,0 +1,99 @@
+<html>
+<head>
+   
+    
+    <style>
+        
+        h3 {
+    font-family:"Futura", Georgia, Serif;
+   color: rgb(40, 20, 80);
+            
+    }
+    
+    p {
+    font-family:"Futura", Georgia, Serif;
+    color: rgb(10000000, 1000000, 40000000);
+        background-color: rgba(65, 20,120, 1);
+        margin: 0cm 4cm 0cm 4cm;
+    } 
+       
+        body {
+    background-color: rgba(130, 40,120, 1);
+}
+        
+ #helixFossil{
+     width:400px ;
+     }
+  
+        #lalaLoopsy{
+            width: 400px;
+        }
+        
+        #iceBear{
+            width: 400px;
+        }
+        </style>
+   
+    
+    
+</head>
+<body>
+
+
+
+<img src="elk.jpg"  id="helixFossil">
+
+<img src="hornedowl.jpg" id= "lalaLoopsy">
+    
+    <img src="icebear.jpg" id= "iceBear">
+    
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript">
+ </script>
+<script type="text/javascript">
+//Here's a function to get RSS information
+//input parameter: url = url of the rss feed you want
+function getRSSFeed(url) {
+	var rssurl = encodeURIComponent(url);
+	var baseurl = "http://codeghs.com/scripts/rss.php?feedurl=" + rssurl;
+	$.ajax({
+		url: baseurl,
+		type: 'GET',
+		success: function(data){
+			generatePageData($.parseJSON(data).item);
+		}
+
+	});
+}
+getRSSFeed("http://rss.cnn.com/rss/cnn_us.rss")
+
+function generatePageData(pageData){
+    
+    for(var i=0; i<pageData.length; i++){
+        
+        var item= pageData[i];
+        var itemTitle= item.title;
+        var itemDescription= item.description;
+        var itemLink= item.link;
+      
+        var contentBox = document.createElement('div');
+        var title= document.createElement('h3');
+        var text= document.createElement('p');
+        var link= document.createElement('a');
+       
+        $(link).append(title);
+        $(link).attr('href',itemLink);
+        $(link).attr('target', '_blank');
+        $(title).append(itemTitle);
+        $(text).append(itemDescription);
+        $(contentBox).append(link);
+        $(contentBox).append(text);
+        $('body').append(contentBox);
+       
+    }
+        
+}
+
+</script>
+</body>
+</html>
