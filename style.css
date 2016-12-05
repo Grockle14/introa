@@ -1,0 +1,59 @@
+
+
+body { 
+    background-image: url("fallLeaves.jpg");
+  
+    } 
+ 
+#photoWrapper {
+    
+    width: 50%;           
+    margin-left: 25%
+}
+
+#thePhoto {
+    
+    width: 100%;
+    
+}
+#forwardBtn{
+    position: relative;
+   float: right;
+    
+        }
+
+button { 
+    
+    background:#BC7600 ;
+    
+    }
+
+.centerMe {
+    text-align:center;
+        color: #E85A31;
+            background:#FFB386 }
+h1{
+    font-family: 'Yellowtail', cursive;
+}
+p {
+    font-family: 'Yellowtail', cursive;
+}
+
+
+.pageWrapper {
+    width: 50%
+        margin-left: 30%
+        background-color: #FFB386
+    padding: 20 px 20px 20 px 20 px;
+}
+
+.photoWrapper {
+    width 50%
+    margin-left: 30%
+    
+}
+
+#chart_div {
+    margin-left: auto;
+        margin-right: auto;
+        }
