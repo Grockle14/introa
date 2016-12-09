@@ -11,8 +11,7 @@ var imageArray= [
 
     turkey,
        "https://cdn.shopify.com/s/files/1/0083/4602/products/organic_new_england_pie_pumpkin01_fc4db80c-4f84-4806-8783-d8a8ba094c93.jpg?v=1427263497",
-    "https://animal-dream.com/data_images/turkey/turkey8.jpg",
-    "https://thecheeps.files.wordpress.com/2015/09/etnico-autumn-leaves.jpg",
+   
 
 ]
     
