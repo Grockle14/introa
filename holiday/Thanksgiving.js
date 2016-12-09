@@ -11,7 +11,7 @@ var imageArray= [
 
     turkey,
        "https://cdn.shopify.com/s/files/1/0083/4602/products/organic_new_england_pie_pumpkin01_fc4db80c-4f84-4806-8783-d8a8ba094c93.jpg?v=1427263497",
-   
+  " https://s3.amazonaws.com/graphics.texastribune.org/graphics/turkey-facts/assets/turkey-beard.jpg"
 
 ]
     
