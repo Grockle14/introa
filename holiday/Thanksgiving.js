@@ -8,7 +8,7 @@ var glueStick= "Happy Thanksgiving, eat lots of turkey, mashed potatoes, and stu
 var turkey= "https://www.cacklehatchery.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/a/narraa_turk_poults_1_.jpg"
 
 var imageArray= [
-  "https://cdn.differencebetween.net/wp-content/uploads/2015/02/squash-458023_1280-1024x652.jpg",
+
     turkey,
        "https://cdn.shopify.com/s/files/1/0083/4602/products/organic_new_england_pie_pumpkin01_fc4db80c-4f84-4806-8783-d8a8ba094c93.jpg?v=1427263497",
     "https://animal-dream.com/data_images/turkey/turkey8.jpg",
